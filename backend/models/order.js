@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-//schema menu
+//schema commande
 const orderSchema = new Schema({
     total: Number,
     customer: {
@@ -17,7 +17,7 @@ const orderSchema = new Schema({
     timestamps: { currentTime: () => Math.floor(Date.now()) }
 });
 
-//modèle menu
+//modèle commande
 const Order = mongoose.model('Order', orderSchema);
 
 module.exports = Order;

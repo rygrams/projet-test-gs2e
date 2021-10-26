@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-//schema client
+//schema livreur
 const deliverSchema = new Schema({
     idCard : String,
     firstName: String,
@@ -11,7 +11,7 @@ const deliverSchema = new Schema({
     deleted : Boolean
 });
 
-//modèle client
+//modèle livreur
 const Deliver = mongoose.model('Deliver', deliverSchema);
 
 module.exports = Deliver;

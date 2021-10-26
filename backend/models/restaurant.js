@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-//schema client
+//schema restaurant
 const restaurantSchema = new Schema({
     image : String,
     title: String,
@@ -11,7 +11,7 @@ const restaurantSchema = new Schema({
     deleted : Boolean
 });
 
-//modèle client
+//modèle restaurant
 const Restaurant = mongoose.model('Restaurant', restaurantSchema);
 
 module.exports = Restaurant;
